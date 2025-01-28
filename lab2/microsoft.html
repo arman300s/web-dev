@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #f1f1f1;
+            border-bottom: 1px dotted #000;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #000;
+        }
+
+        .right-section {
+            display: flex;
+            align-items: center;
+        }
+
+        .right-section input {
+            margin: 0 15px;
+            padding: 5px;
+        }
+
+        .right-section img {
+            height: 30px;
+            margin-left: 10px;
+        }
+
+        .header a {
+            display: block;
+            text-decoration: none;
+            font-size: 12px;
+            margin: 0;
+            color: gray;
+        }
+        .learn-more {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: dodgerblue;
+            padding: 10px;
+        }
+        .learn-more p {
+            margin: 0;
+            color: white;
+            font-weight: bold;
+            display: inline-flex;
+        }
+        .learn-more a {
+            margin-left: 5px;
+            color: white;
+            text-decoration: underline;
+        }
+        .main-picture {
+            width: 100%;
+            height: 600px;
+            background-image: url('windows.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: 60px;
+            margin-bottom: 20px;
+        }
+        .surface-pro {
+            background-color: white;
+            width: 40%;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: -300px;
+
+        }
+        .link-block {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 200px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .link-block a {
+            color: blue;
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: 10px;
+        }
+        .link-block img {
+            display: block;
+            margin: 0 auto 10px;
+            width: 30px;
+            height: auto;
+        }
+        .info-block {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .mini-box {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 22%;
+            margin: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+            padding: 10px;
+        }
+        .mini-box img {
+            max-width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+        }
+        .mini-box h2 {
+            font-size: 1.5em;
+            margin: 20px 0;
+        }
+        .mini-box p {
+            font-size: 1em;
+            color: #555;
+        }
+        .all-blue-buttons {
+            background-color: #0078d4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .mini-box button:hover {
+            background-color: #005a9e;        }
+
+    </style>
+</head>
+<body>
+<div class = container>
+    <header>
+        <div class="logo">
+            <img src="microsoft.png" alt="Microsoft Logo">
+            <span>Microsoft</span>
+        </div>
+        <nav>
+            <a href="#">Microsoft 365</a>
+            <a href="#">Office</a>
+            <a href="#">Windows</a>
+            <a href="#">Поддержка</a>
+        </nav>
+        <div class="right-section">
+            <a href="#">Продукты Майкрософт</a>
+            <input type="text" placeholder="Поиск">
+            <span>Profile</span>
+            <img src="user.png" alt="Profile Icon">
+        </div>
+    </header>
+    <div class = learn-more>
+        <p>Pay your way, with flexible payment options available at checkout. <a href = "">Learn more</a>
+        </p>
+    </div>
+    <div class = "main-picture">
+        <div class = surface-pro>
+            <h1>Meet Surface Pro</h1>
+            <p>The laptop's unrivalled flexibility and AI features like  Live Captions and<br>
+            Cocreator enable you to do more than you ever imagined.</p>
+            <button class="all-blue-buttons" type="submit">Shop now</button>
+        </div>
+    </div>
+    <div class = "link-block">
+        <div>
+            <img src="computer.png" alt="Icon">
+            <a href = "">Shop Surface Devices</a>
+        </div>
+        <div>
+            <img src="xbox-logo.png" alt="Icon">
+            <a href = "">Shop Xbox games and consoles</a>
+        </div>
+        <div>
+            <img src="keyboard-and-mouse.png" alt="Icon">
+            <a href = "">Shop for accessories</a>
+        </div>
+        <div>
+            <img src="briefcase.png" alt="Icon">
+            <a href = "">Shop for your business</a>
+        </div>
+        <div>
+            <img src="monitor.png" alt="Icon">
+            <a href = "">Find your next PC</a>
+        </div>
+        <div>
+            <img src="microsoft.png" alt="Icon">
+            <a href = "">Choose your Microsoft 365</a>
+        </div>
+    </div>
+    <div class = "info-block">
+        <div class = mini-box>
+            <img src="first.avif" alt="Surface Laptop">
+            <h2>Surface Laptop, Copilot+ <br>
+            PC</h2>
+            <p>Unlock all AI features like Live Captions and <br>
+            Cocreator with this  exceptionally powerful<br>
+            laptop</p>
+            <button class="all-blue-buttons" type="submit">Shop now</button>
+        </div>
+        <div class = mini-box>
+            <img src="second.avif" alt="Xbox Series X">
+            <h2>Xbox Series S</h2>
+            <p>Next gen performance in the smallest Xbox<br>
+            ever</p>
+            <button class="all-blue-buttons" type="submit">Shop Xbox Series S</button>
+        </div>
+        <div class = mini-box>
+            <img src="third.webp" alt="Xbox Controllers">
+            <h2>Xbox controllers</h2>
+            <p>Elite, wireless, adaptive - find the controller <br>
+            that fits your style of play</p>
+            <button class="all-blue-buttons" type="submit">Shop now</button>
+        </div>
+        <div class = mini-box>
+            <img src="fourth.avif" alt="D_D">
+            <h2>Xbox presents<br>
+            Developer_Direct</h2>
+            <p>Tune in January 23 at 10 AM PT to hear directly <br>
+            from the developers</p>
+            <button class="all-blue-buttons" type="submit">Learn now</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
