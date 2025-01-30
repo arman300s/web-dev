@@ -30,13 +30,13 @@
             height: 300px;
             background-color: white;
             padding: 5px;
-
         }
         .login-box .input-field {
             width: 100%;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
             height: 40px;
             padding: 0 20px;
+            margin-top: 10px;
         }
         .login-button {
             width: 100%;
@@ -47,6 +47,8 @@
             border-radius: 5px;
             cursor: pointer;
             font-size: 20px;
+            margin-top: 10px;
+            margin-bottom: 15px;
         }
         .forgot-password {
             display: flex;
@@ -76,6 +78,7 @@
             cursor: pointer;
             font-size: 20px;
             color: white;
+            margin-bottom: 20px;
         }
         p {
             font-size: 24px;
@@ -84,32 +87,69 @@
             font-size: 40px;
             color: dodgerblue;
         }
-
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 12px;
+            color: gray;
+        }
+        .footer a {
+            margin: 0 10px;
+            color: gray;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-<div class = "info">
-<h1>Facebook</h1>
-<p>Facebook помогает вам всегда<br> оставаться на связи и общаться до<br> своими знакомыми</p>
+<div class="info">
+    <h1>Facebook</h1>
+    <p>Facebook помогает вам всегда<br> оставаться на связи и общаться со<br> своими знакомыми</p>
 </div>
-<div class = "login-box">
-    <div class = "input-field">
-        <input type = "text" class = "input-field" placeholder="Email or phone number">
+<div class="login-box">
+    <div class="input-field">
+        <input type="text" class="input-field" placeholder="Email or phone number">
     </div>
-    <div class = "input-field">
-        <input type = "password" class = "input-field" placeholder="password">
+    <div class="input-field">
+        <input type="password" class="input-field" placeholder="password">
     </div>
-    <div class = "input-field">
-        <button class = "login-button" type = "submit">Login</button>
+    <div class="input-field">
+        <button class="login-button" type="submit">Login</button>
     </div>
-    <div class = "forgot-password">
-        <a href = "#">Forgot your password?</a>
+    <div class="forgot-password">
+        <a href="#">Forgot your password?</a>
     </div>
     <hr style="border: 0.5px solid gray; margin: 10px 0; width: 100%;">
-    <div class = "create-account">
-        <button class = "create-account-button" type = "submit">Create an account</button>
+    <div class="create-account">
+        <button class="create-account-button" type="submit">Create an account</button>
     </div>
 </div>
 
+<footer class="footer">
+    <div>
+        <a href="#">English (US)</a>
+        <a href="#">Русский</a>
+        <a href="#">Español</a>
+        <a href="#">Français</a>
+        <a href="#">Deutsch</a>
+    </div>
+    <div style="margin-top: 10px;">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Advertising</a>
+        <a href="#">Ad Choices</a>
+        <a href="#">Cookies</a>
+        <a href="#">More</a>
+    </div>
+    <div style="margin-top: 10px;">
+        &copy; 2025 Facebook
+    </div>
+</footer>
 </body>
 </html>
