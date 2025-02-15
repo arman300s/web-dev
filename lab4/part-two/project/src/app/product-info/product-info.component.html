@@ -1,0 +1,25 @@
+<section class="listing">
+  <img
+    class="listing-photo"
+    [src]="productInfo.photoUrl"
+    alt="Exterior photo of {{ productInfo.name }}"
+    crossorigin
+  />
+  <h2 class="listing-heading">{{ productInfo.name }}</h2>
+  <p class="listing-description">product: {{ productInfo.description }}</p>
+  <p class="listing-rating">rating: {{ productInfo.rating }}</p>
+  <a [routerLink]="['/details', productInfo.id]">About</a>
+  <a href="{{productInfo.linkUrl}}"> kaspi link </a>
+
+  <a [href]="getWhatsAppShareUrl(productInfo.linkUrl, productInfo.name)" target="_blank" rel="noopener noreferrer">
+    <button class="whatsapp-btn">Share on WhatsApp</button>
+  </a>
+
+  <!-- Telegram Share Button -->
+  <a [href]="getTelegramShareUrl(productInfo.linkUrl, productInfo.name)" target="_blank" rel="noopener noreferrer">
+    <button class="telegram-btn">Share on Telegram</button>
+  </a>
+
+
+
+</section>

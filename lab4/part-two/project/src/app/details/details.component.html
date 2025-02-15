@@ -1,0 +1,12 @@
+<article>
+  <img
+    class="listing-photo"
+    [src]="productInfo?.photoUrl"
+    alt="Exterior photo of {{ productInfo?.name }}"
+    crossorigin
+  />
+  <section class="listing-description">
+    <h2 class="listing-heading">{{ productInfo?.name }}</h2>
+    <p class="listing-location">Description:  {{ productInfo?.description }} Rating: {{ productInfo?.rating }}</p>
+  </section>
+</article>
