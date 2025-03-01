@@ -1,0 +1,16 @@
+<div *ngIf="loaded; else loadingBlock" class="photo-gallery">
+  <h2>Photos from Album #{{ albumId }}</h2>
+
+  <div class="photo-list">
+    <div *ngFor="let photo of photos" class="photo-card">
+      <img [src]="photo.thumbnailUrl" [alt]="photo.title" />
+      <p>{{ photo.title }}</p>
+    </div>
+  </div>
+
+  <button (click)="goBack()">🔙 Back to Album</button>
+</div>
+
+<ng-template #loadingBlock>
+  <p>Loading photos...</p>
+</ng-template>

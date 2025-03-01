@@ -1,0 +1,39 @@
+h1{
+  text-align: center;
+  color: #007bff;
+}
+.info-block {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.info-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info-block li {
+  display: block;
+}
+
+.info-block a {
+  display: block;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.info-block a:hover {
+  background-color: #007bff;
+  color: white;
+}

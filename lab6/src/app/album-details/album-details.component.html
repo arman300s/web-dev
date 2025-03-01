@@ -1,0 +1,17 @@
+<div *ngIf="loaded, else loadingBlock" class="album-detail">
+  <h3>Album #{{album.id}}</h3>
+
+  <h4>User ID: {{album.userId}}</h4>
+
+  <p *ngIf="!isEditing">Title of Album: {{album.title}}</p>
+  <input *ngIf="isEditing" [(ngModel)]="editedTitle" class="title-input" />
+
+  <button *ngIf="!isEditing" (click)="editTitle()" class="edit-button">✏ Edit</button>
+  <button *ngIf="isEditing" (click)="saveTitle()" class="save-button">💾 Save</button>
+  <button (click)="goBack()" class="back-button">🔙 Back to Albums</button>
+  <a [routerLink]="['/albums', album.id, 'photos']" class="photos-link">📸 View Photos</a>
+</div>
+
+<ng-template #loadingBlock>
+  Post detail is loading
+</ng-template>
